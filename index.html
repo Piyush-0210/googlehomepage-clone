@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project</title>
+    <style>
+        nav{
+            text-align: right;
+        }
+        .navitems{
+            text-decoration: none;
+            color: gray;
+            padding: 0px 10px;
+            position: relative;
+            top: 35px;
+            right: 150px;
+        }
+        .navitems:hover{
+            text-decoration: underline;
+        }
+        .navimage{
+            width: 20px;
+            height: 20px;
+            padding:10px 10px;
+            position: relative;
+            top: -50px;
+            right: 20px;
+        }
+        #userid{
+            width: 40px;
+            height: 40px;
+        }
+        #googleimg{
+            position: relative;
+            top: 165px;
+            left: 800px;
+        }
+        #search{
+            position: relative;
+            top: 172px;
+            left: 360px;
+            width: 32%;
+            height: 38px;
+            border-radius:50px ;
+            border: .5px solid rgb(196, 192, 192);
+            outline: none;
+        }
+        #search:hover{
+            box-shadow: 0px 0px 3px gray;
+        }
+        #search:focus{
+            box-shadow: 0px 0px 3px gray;
+        }
+        #button{
+            position: relative;
+            top: 183px;
+            left: 300px;
+            width: 50px;
+            height: 34px;
+            border-radius: 100px;
+        }
+        .smallbuttons{
+            position:relative;
+            top: 265px;
+            left:-165px;
+            margin: 0px 20px;
+            padding: 10px 15px;
+            background-color: rgb(197, 197, 197);
+            border: 0px;
+        }
+        .smallbuttons:hover{
+            box-shadow: 0px 0px 5px black;
+        }
+        #bar{
+            width: 350px;
+            height: 350px;
+            box-shadow: 0px 0px 5px black;
+            position: absolute;
+            top: 0px;
+            right:25px;
+            display: none;
+        }
+        .app{
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 10px 0px;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 50px;
+            left: -30px;
+        }
+        .app>img{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 25px;
+            left: -20px;
+        }
+        p{
+            position: relative;
+            top: 25px;
+            left: -30px;
+        }
+        .app:hover{
+            
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        #a{ 
+            position: relative;
+            top: 55px;
+            right: 75px;
+        }
+        #a:hover #bar{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navitems" href="#" class="">Gmail</a>
+            <a class="navitems" href="#">Images</a>
+            <div id="a">
+                <a href="#"><img id="apps"  class="navimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8uy8i-EU9LmvO6JpCoGVnCtj5pzIWV4H8AQ&usqp=CAU" alt="icon bar"></a>
+            <div id="bar">
+                <div class="app" id="app1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTddyFAW-XHS45vsHFtsw47IgQutIgPHcWxTQ&usqp=CAU" alt="googleapp">
+                    <p>Search</p>
+                </div>
+                <div class="app" id="app2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPKU8u1RVMlk83J6deuVJ-HER2hLgKVOXWw&usqp=CAU" alt="googleapp">
+                    <p>Maps</p>
+                </div>
+                <div class="app" id="app3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8pVDhAddM5bsl9s89NAqMCkIqooRyx1xBQw&usqp=CAU" alt="googleapp">
+                    <p>Drive</p>
+                </div><br>
+                <div class="app" id="app4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xQ6ROoPWSfr-GAXyzcCbsuIpJTjVcAVNOw&usqp=CAU" alt="googleapp">
+                    <p>Calender</p>
+                </div>
+                <div class="app" id="app5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_OLK3gs-1ExIsaBCNWPBpGfyoV64r0W2qg&usqp=CAU" alt="googleapp">
+                    <p>Photos</p>
+                </div>
+                <div class="app" id="app6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhm_TYzaRkHmEhhif8rH0i0XCdFU34hys2IQ&usqp=CAU" alt="googleapp">
+                    <p>Keep</p>
+                </div>
+            </div>
+            </div>
+        <a href="#"><img id="userid" class="navimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvetk9tOwHkQMwe1DfoxempOXosaikcVL5QQ&usqp=CAU" alt="your id"></a>
+        </nav>
+    </header>
+    <img id="googleimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkD-pjDdcoIjL6ZqIA-k7xRF_dpc7ZYWAuWQ&usqp=CAU" alt="google image">
+    <input type="text" name="mysearch" id="search">
+    <img id="button"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsx_7hQsndGHuf05mjKudvADs4MPF2XQ6d_Q&usqp=CAU" alt="microphone">
+    <button id="button1" class="smallbuttons">Google Search</button><button id="button2" class="smallbuttons">I'm Feeling Lucky</button>
+</body>
+</html>
